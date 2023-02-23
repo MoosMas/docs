@@ -146,3 +146,49 @@ Om Breeze te installeren run je de volgende commando's:
 4. `npm install`
 5. `npm run dev`
 
+## Livewire
+Om Livewire te installeren run je de volgende commando's:
+1. `composer require livewire/livewire`
+2. Kies één van onderstaande opties en voeg deze toe in de layout van de webapp (bijvoorbeeld `resources/views/welcome.blade.php`):
+
+### Directive
+Voeg onderstaande regel toe in de `<head>` tag:
+```php
+@livewireStyles
+```
+en onderstaande regel onderaan in de `<body>`:
+```php
+@livewireScripts
+```
+
+### Tags
+Voeg onderstaande regel toe in de `<head>` tag:
+```html
+<livewire:styles />
+```
+en onderstaande regel onderaan in de `<body>`:
+```html
+<livewire:scripts />
+```
+
+{: .important }
+Als de `@` syntax (directive) niet werkt, kan je ook de tag syntag gebruiken. Dit werkt dan vaak wel.
+
+{::options parse_block_html="true" /}
+<details><summary markdown="span">Het bestand ziet er dan ongeveer zo uit</summary>
+```html
+<html>
+<head>
+    ...
+    @livewireStyles / <livewire:styles />
+</head>
+<body>
+    ...
+    @livewireScripts / <livewire:scripts />
+</body>
+</html>
+```
+</details>
+{::options parse_block_html="false" /}
+
+
