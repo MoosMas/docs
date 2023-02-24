@@ -32,14 +32,14 @@ nav_order: 3
             <td>Toon nieuw-formulier</td>
             <td>GET</td>
             <td>/photos/create</td>
-            <td>create()</td>
+            <td><a href="./controllers.html#create-get">create()</a></td>
             <td>photos.create</td>
         </tr>
         <tr>
             <td>Opslaan nieuw item</td>
             <td>POST</td>
             <td>/photos</td>
-            <td>store()</td>
+            <td><a href="./controllers.html#store-post">store()</a></td>
             <td>photos.store</td>
         </tr>
         <tr>
@@ -47,14 +47,14 @@ nav_order: 3
             <td>Toon alle items</td>
             <td>GET</td>
             <td>/photos</td>
-            <td>index()</td>
+            <td><a href="./controllers.html#index-get">index()</a></td>
             <td>photos.index</td>
         </tr>
         <tr>
             <td>Toon één item</td>
             <td>GET</td>
             <td>/photos/{photo}</td>
-            <td>show()</td>
+            <td><a href="./controllers.html#show-get">show()</a></td>
             <td>photos.show</td>
         </tr>
         <tr>
@@ -62,14 +62,14 @@ nav_order: 3
             <td>Toon edit-formulier</td>
             <td>GET</td>
             <td>/photos/{photo}/edit</td>
-            <td>edit()</td>
+            <td><a href="./controllers.html#edit-get">edit()</a></td>
             <td>photos.edit</td>
         </tr>
         <tr>
             <td>Opslaan aangepast item</td>
             <td>PUT</td>
             <td>/photos/{photo}</td>
-            <td>update()</td>
+            <td><a href="./controllers.html#update-put">update()</a></td>
             <td>photos.update</td>
         </tr>
         <tr>
@@ -77,7 +77,7 @@ nav_order: 3
             <td>Verwijderen item</td>
             <td>DELETE</td>
             <td>/photos/{photo}</td>
-            <td>destroy()</td>
+            <td><a href="./controllers.html#destroy-delete">destroy()</a></td>
             <td>photos.destroy</td>
         </tr>
     </tbody>
