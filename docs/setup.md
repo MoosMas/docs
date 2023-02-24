@@ -23,7 +23,8 @@ Om een nieuw project aan te maken voer je onderstaande stappen uit:
 2. Run `laravel new name` waar `name` de naam van je project is
 3. Open de map in een editor
 4. Kopieer de .env.example naar .env
-
+    {: .mt-0 }
+   
     {: .important }
     Hernoem de .env.example niet, maar kopieer hem. Hij moet namelijk ook voor toekomstige gebruikers beschikbaar blijven als .env.example.
 
@@ -44,7 +45,8 @@ Om een bestaand project te clonen zodat je er lokaal aan kunt werken, voer je on
 4. Selecteer de map waar je hem in wil hebben (bijvoorbeeld `C:\laragon\www`) en clone hem
 5. Open de map in een editor
 6. Kopieer de .env.example naar .env
-
+    {: .mt-0 }
+    
     {: .important }
     Hernoem de .env.example niet, maar kopieer hem. Hij moet namelijk ook voor toekomstige gebruikers beschikbaar blijven als .env.example.
     
