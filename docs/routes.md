@@ -16,6 +16,45 @@ nav_order: 3
 {:toc}
 </details>
 
+## Introductie
+Routes zijn er om aan te geven waar verzoeken naartoe moeten gaan. Bij een route wordt aangegeven naar welke controller het verzoek gestuurd moet worden, en welke methode in die controller het af gaat handelen. Routes staan in de `routes/web.php`.
+
+## Route aanmaken
+Om een GET route aan te maken (om een pagina op te vragen), kan je de volgende regel als voorbeeld gebruiken:
+
+```php
+Route::get('/item/{id}', [ItemController::class, 'show'])->name('items.show');
+```
+
+- `'/item'` is de URL in de browser waar deze route naar 'luistert'
+- `/{id}` is een parameter waarmee je kan aangeven welk item er opgehaald moet worden
+- `ItemController` wijst naar de controller van de route
+- `'index'` geeft aan welke methode het af gaat handelen
+- `name()` is de naam van de route, zodat je hem later makkelijk kunt gebruiken in bijvoorbeeld een redirect
+
+Je kan ook in één regel alle routes voor een resource maken:
+```php
+Route::resource('items', ItemController::class);
+```
+
+## Route berschermen
+Om te zorgen dat alleen ingelogde gebruikers een route kunnen bezoeken, kan je gebruik maken van middleware.
+
+```php
+Route::get('/items', [ItemController::class, 'index'])->middleware('auth');
+```
+
+Om meerdere routes te beschermen kan je een group maken:
+
+```php
+Route::middleware('auth')->group(function () {
+    Route::get('/item/{id}', [ItemController::class, 'show'])->name('items.show');
+    Route::get('/items', [ItemController::class, 'index'])->name('items.index');
+    // Of een resource
+    Route::resource('items', ItemController::class);
+});
+```
+
 ## Cheatsheet
 <table>
     <thead>
