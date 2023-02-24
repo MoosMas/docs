@@ -16,19 +16,44 @@ nav_order: 2
 {:toc}
 </details>
 
-## Creating new project
+## Nieuw project aanmaken
+Om een nieuw project aan te maken voer je onderstaande stappen uit:
 
-Om een nieuw project aan te maken ga je naar de map waarin je het project wil hebben. Daar open je de terminal en voer je het volgende commando uit: `laravel new name`, waar `name` de naam van je project is. Daarna open je de map in een editor. Kopieer de .env.example. Hernoem hem niet, maar kopieer hem.
+1. Ga naar de map waarin je het project wil hebben
+2. Run `laravel new name` waar `name` de naam van je project is
+3. Open de map in een editor
+4. Kopieer de .env.example naar .env
 
-Run daarna de volgende commando's in een terminal:
+    {: .important }
+    Hernoem de .env.example niet, maar kopieer hem. Hij moet namelijk ook voor toekomstige gebruikers beschikbaar blijven als .env.example.
 
-1. `composer install`
-2. `php artisan key:generate`
-3. `php artisan migrate`
->Als hij vraagt of je de database aan wil maken, kies dan voor yes.
-1. `npm install`
-2. `npm run dev`
+5. Run `composer install`
+6. Run `php artisan key:generate`
+7. Run `php artisan migrate` (kies voor yes als hij vraagt of je de database aan wil maken)
+8. Run `npm install`
+9. Run `npm run dev`
 
+Klik nu in de terminal op de URL om hem in de browser te openen.
+
+## Bestaand project gebruiken
+Om een bestaand project te clonen zodat je er lokaal aan kunt werken, voer je onderstaande stappen uit:
+
+1. Ga naar de repository op github.com
+2. Klik op de groene knop `<> Code`
+3. Klik op `Open with GitHub Desktop`
+4. Selecteer de map waar je hem in wil hebben (bijvoorbeeld `C:\laragon\www`) en clone hem
+5. Open de map in een editor
+6. Kopieer de .env.example naar .env
+
+    {: .important }
+    Hernoem de .env.example niet, maar kopieer hem. Hij moet namelijk ook voor toekomstige gebruikers beschikbaar blijven als .env.example.
+    
+7. Run `composer install`
+8. Run `php artisan key:generate`
+9. Run `php artisan migrate` (kies voor yes als hij vraagt of je de database aan wil maken)
+10. Run `npm install`
+11. Run `npm run dev`
+   
 Klik nu in de terminal op de URL om hem in de browser te openen.
 
 ## Tailwind
